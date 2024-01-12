@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><button class="sound-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-volume-x">
+            <path d="M11 5 6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" />
+        </svg></button></li>
+          <li><button class="hue-sync">Hue/result sync</button></li>
+          <li>
+            <code>--base-hue:</code><input type="number" value="44" id="hue-input">
+          </li>
+           <li>
+            <code>--base-lightness:</code><input type="number" value="55" id="lightness-input">
+          </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="calculator" data-hue="4">
+            <div>
+                <div class="screen">
+                    <div class="inner"></div>
+                </div>
+
+                <div class="controls">
+                    <div class="functions">
+                        <span><button data-value="ON/AC">ON/AC</button></span>
+                        <span><button data-value="GT">GT</button></span>
+                        <span><button data-value="▷">▷</button></span>
+                        <span><button data-value="/">/</button></span>
+                        <span><button data-value="MRC">MRC</button></span>
+                        <span><button data-value="M+">M+</button></span>
+                        <span><button data-value="M-">M-</button></span>
+                        <span><button data-value="X">X</button></span>
+                    </div>
+                    <div class="numbers">
+                        <span><button data-value="7">7</button></span>
+                        <span><button data-value="8">8</button></span>
+                        <span><button data-value="9">9</button></span>
+                        <span><button data-value="4">4</button></span>
+                        <span><button data-value="5">5</button></span>
+                        <span><button data-value="6">6</button></span>
+                        <span><button data-value="1">1</button></span>
+                        <span><button data-value="2">2</button></span>
+                        <span><button data-value="3">3</button></span>
+                        <span><button data-value="0">0</button></span>
+                        <span><button data-value=".">.</button></span>
+                    </div>
+                    <div class="elementary">
+                        <span><button data-value="-">-</button></span>
+                        <span><button data-value="+">+</button></span>
+                        <span><button data-value="=">=</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="info-box" data-info-chrome="✅ Rendering in Chrome" data-info-safari="🟧 Rendering in Safari ( color-mix not available )" data-info-firefox="🟧 Rendering in Firefox (color-mix behind a flag)" data-presentation-width="60vw" data-presentation-height="70vh" data-inspiration="https://twitter.com/SebastienNvzt/status/1641419150718390272?s=20" data-theme="blue" data-hidden-onload="false"></div>
+    <script src="script.js"></script>
+</body>
+</html>
