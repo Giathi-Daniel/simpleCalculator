@@ -173,10 +173,10 @@ main {
 }
 
 .calculator {
-  --base-hue: 44; 
-  --base-saturation: 91; 
-  --base-lightness: 55; 
-  /* //--base-lightness: 20; */
+  --base-hue: 44; /* That's the default hue from the design */
+  --base-saturation: 91; /* That's the default hue from the design */
+  --base-lightness: 55; /* That's the default hue from the design */
+  /* --base-lightness: 20; */
   --gradient-start: hsl(
     var(--base-hue),
     calc(var(--base-saturation) * 1%),
@@ -369,7 +369,7 @@ main {
       margin-block: 8px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-row: repeat(2, 1fr);
       grid-gap: 10px;
       width: 100%;
 
@@ -386,7 +386,8 @@ main {
             padding: 6px;
             width: 100%;
 
-            /* Small trick for smaller characters ( in this demo, the ÷ sign) */
+            /* // Small trick for smaller
+            // characters ( in this demo, the ÷ sign) */
             & > span {
               transform: scale(1.8) translateY(1px);
             }
@@ -438,7 +439,7 @@ main {
         grid-column-end: 4;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
-        font-family: "Abril Fatface";/* papyrus; */
+        font-family: "Abril Fatface", papyrus; /*// ;D */
         font-size: 24px;
 
         & span:nth-last-child(2) {
